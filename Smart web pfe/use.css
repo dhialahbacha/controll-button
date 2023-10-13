@@ -1,0 +1,94 @@
+body {
+    color: #380834;
+    font-family: Helvetica;
+    line-height: 1.2;
+    margin: 1em;
+  }
+  p {
+    margin: .25em 0 .75em;
+  }
+  .content {
+    margin: 0 auto;
+    max-width: 40em;
+  }
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .applet {
+    border: .2em solid rgb(58, 10, 51);
+    border-radius: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    padding: 1em;
+  }
+  .applet-logo {
+    flex-grow: 0;
+    padding: .5em 1.5em 0 .5em;
+  }
+  .applet-logo img {
+    width: 8em;
+  }
+  
+  .applet-name {
+    font-weight: bold;
+    font-size: large;
+  }
+  
+  .applet p {
+    margin-bottom: .25em;
+  }
+  #alertAll, #alertBldg, #alertUnlockApt, #alertLockApt {
+    padding: 1em;
+  	margin-bottom: 2em;
+    background-color: #6c9e6d;
+    color: white;
+  	display: none;
+}
+.closebtn {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+  
+#tooltipAll, #tooltipBldg, #tooltipUnlockApt, #tooltipLockApt {
+  display: none;
+}
+ #unlockApt, #lockApt {
+    background: linear-gradient(rgb(54, 177, 119), rgb(75, 189, 126));
+    border-radius: 5px;
+    padding: 8px 20px;
+    color: rgb(255, 255, 255);
+    display: inline-block;
+    font: 700 24px/1 Calibri, sans-serif;
+    text-align: center;
+    text-shadow: rgb(0, 0, 0) 1px 1px;
+    white-space: pre;
+  }
+        
+  .btn {
+    background-color: rgb(47, 226, 143);
+    color: rgb(0, 0, 0);
+    border: none;
+    transition:0.8s ease ;
+    cursor: pointer;
+    
+  }
+  input {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+  }
+.btn:hover{
+    background-color: rgb(131, 219, 200);
+}

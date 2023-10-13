@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="use.css" />
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.21.0/firebase-app.js"
+    ></script>
+    <script
+      type="module"
+      src="https://www.gstatic.com/firebasejs/9.21.0/firebase-database.js"
+    ></script>
+    <script src="user.js" type="module"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div style="text-align: right">
+      <input
+        type="button"
+        value="logout"
+        class="btn"
+        onclick="logout()"
+        id="logo"
+      />
+    </div>
+
+    <div class="content">
+      <li class="applet">
+        <a class="applet-logo">
+          <img src="unlock.png" alt="Unlocked padlock" />
+        </a>
+        <div class="applet-body">
+          <p class="applet-name">Unlock the apartment door only</p>
+          <p>Lets you into the apartment.</p>
+          <br />
+          <button id="unlockApt" onclick="unlockDoor()">Unlock</button>
+        </div>
+      </li>
+
+      <li class="applet">
+        <a class="applet-logo">
+          <img src="lock.png" alt="Locked padlock" />
+        </a>
+        <div class="applet-body">
+          <p class="applet-name">Lock the apartment door</p>
+          <p>Secures the apartment.</p>
+          <p><br /></p>
+          <button id="lockApt" onclick="lockDoor()">Lock</button>
+        </div>
+      </li>
+    </div>
+  </body>
+</html>
